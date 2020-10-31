@@ -1,0 +1,8 @@
+#mapid {
+  height: calc(100vh - 250px);
+  min-height: 420px;
+
+  @media (max-width: 991px) {
+    height: calc(100vh - 280px);
+  }
+}

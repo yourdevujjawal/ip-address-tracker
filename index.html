@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <div class="main">
+    <div class="form-component">
+      <h1 class="h1">IP Address Tracker</h1>
+      <form class="ip-form" id="ipForm" name="ipForm">
+        <div class="search">
+          <input type="text" id="ipField" name="ipField" placeholder="Search for any IP address" class="search__input" />
+          <button id="search-ip" type="submit" class="search__btn"></button>
+        </div>
+      </form>
+      <div class="ip-wrapper">
+        <div class="ip-box">
+          <div class="ip-label">IP ADDRESS</div>
+          <div class="ip-value">192.158.1.1</div>
+        </div>
+        <div class="ip-box">
+          <div class="ip-label">LOCATION</div>
+          <div class="ip-value">
+            <div class="location">Darbhanga, IN</div>
+            <div class="pincode">845668</div>
+          </div>
+        </div>
+        <div class="ip-box">
+          <div class="ip-label">TIMEZONE</div>
+          <div class="ip-value">UTC <span class="timezone">-05:30</span></div>
+        </div>
+        <div class="ip-box">
+          <div class="ip-label">ISP</div>
+          <div class="ip-value">
+            <span class="isp">Verizon</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="map-component">
+      <div id="mapid"></div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
